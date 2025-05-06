@@ -1,0 +1,104 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#entrance, #mausoleum, #warning, #secret {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#gate {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    width: 10%;
+    height: 20%;
+    cursor: pointer;
+}
+
+#gate:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#backButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#champetWrapper {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+#champet {
+    width: 40%;
+    height: auto;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+}
+
+#champet:hover {
+    transform: rotate(360deg);
+}
+
+#champetTitle {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#secretLink {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 20;
+    background-color: transparent;
+}
+
+#pageTitle {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 20;
+} 
